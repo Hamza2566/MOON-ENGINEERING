@@ -29,7 +29,7 @@ export default function Hero() {
                         Jigjiga, Somali Region, Ethiopia
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight mb-6 tracking-tight drop-shadow-lg">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight mb-6 tracking-tight drop-shadow-lg text-white">
                         Moon Engineering <br />
                         <span className="text-accent relative inline-block drop-shadow-xl mt-2">
                             Consultancy
@@ -63,7 +63,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 mt-28 w-full max-w-5xl border-y border-white/10 py-10 backdrop-blur-sm bg-primary/20 rounded-3xl"
+                    className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 mt-28 w-full max-w-5xl border-y border-white/10 py-10 backdrop-blur-sm bg-white/5 rounded-3xl"
                 >
                     {[
                         { value: "50+", label: "Projects Completed" },

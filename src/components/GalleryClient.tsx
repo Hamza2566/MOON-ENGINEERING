@@ -31,25 +31,8 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
     };
 
     return (
-        <div className="min-h-screen bg-background pt-32 pb-20">
+        <div className="bg-background py-16">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="text-center mb-16">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-bold mb-6"
-                    >
-                        Photo <span className="text-accent">Gallery</span>
-                    </motion.h1>
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        className="text-muted-foreground max-w-2xl mx-auto text-lg"
-                    >
-                        A visual journey of our engineering milestones and construction progress.
-                    </motion.p>
-                </div>
 
                 {/* Filters */}
                 <motion.div
@@ -63,8 +46,8 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all ${filter === cat
-                                    ? "bg-accent text-primary-dark shadow-[0_0_15px_rgba(232,185,35,0.4)]"
-                                    : "bg-card text-foreground border border-white/5 hover:border-accent/40"
+                                ? "bg-accent text-primary-dark shadow-[0_0_15px_rgba(232,185,35,0.4)]"
+                                : "bg-card text-foreground border border-black/5 hover:border-accent/40"
                                 }`}
                         >
                             {cat}
@@ -83,11 +66,11 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.3 }}
                                 key={item._id}
-                                className="relative group rounded-3xl overflow-hidden border border-white/5 break-inside-avoid cursor-pointer bg-primary/20"
+                                className="relative group rounded-3xl overflow-hidden border border-black/5 break-inside-avoid cursor-pointer bg-muted"
                                 onClick={() => openLightbox(index)}
                             >
                                 <img
-                                    src={item.imageUrl}
+                                    src={item.imageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop"}
                                     alt={item.title}
                                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
@@ -104,7 +87,7 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
                 </motion.div>
 
                 {filteredItems.length === 0 && (
-                    <div className="text-center text-muted-foreground py-20 bg-card rounded-3xl border border-white/5 mt-10">
+                    <div className="text-center text-muted-foreground py-20 bg-card rounded-3xl border border-black/5 mt-10">
                         No images found for this category.
                     </div>
                 )}
@@ -127,7 +110,7 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
                         </button>
                         <div className="max-w-6xl w-full px-4 flex flex-col items-center">
                             <img
-                                src={filteredItems[currentIndex].imageUrl}
+                                src={filteredItems[currentIndex].imageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop"}
                                 alt={filteredItems[currentIndex].title}
                                 className="max-h-[80vh] object-contain rounded-xl shadow-2xl"
                             />

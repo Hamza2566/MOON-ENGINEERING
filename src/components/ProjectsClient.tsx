@@ -29,7 +29,7 @@ export default function ProjectsClient({ initialProjects }: { initialProjects: P
     }, [filter, initialProjects]);
 
     return (
-        <div className="min-h-screen bg-background pt-32 pb-20">
+        <div className="bg-background py-16">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="text-center mb-16">
                     <motion.h1
@@ -61,8 +61,8 @@ export default function ProjectsClient({ initialProjects }: { initialProjects: P
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all ${filter === cat
-                                    ? "bg-accent text-primary-dark shadow-[0_0_15px_rgba(232,185,35,0.4)]"
-                                    : "bg-card text-foreground border border-white/5 hover:border-accent/40"
+                                ? "bg-accent text-primary-dark shadow-[0_0_15px_rgba(232,185,35,0.4)]"
+                                : "bg-card text-foreground border border-black/5 hover:border-accent/40"
                                 }`}
                         >
                             {cat}
@@ -81,22 +81,16 @@ export default function ProjectsClient({ initialProjects }: { initialProjects: P
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.3 }}
                                 key={project._id}
-                                className="bg-card rounded-3xl overflow-hidden border border-white/5 group flex flex-col"
+                                className="bg-card rounded-3xl overflow-hidden border border-black/5 group flex flex-col"
                             >
-                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-primary/20">
-                                    {project.featuredImageUrl ? (
-                                        <img
-                                            src={project.featuredImageUrl}
-                                            alt={project.title}
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                        />
-                                    ) : (
-                                        <div className="absolute inset-0 bg-primary-dark flex items-center justify-center text-muted-foreground">
-                                            No Image Available
-                                        </div>
-                                    )}
+                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+                                    <img
+                                        src={project.featuredImageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    />
                                     {/* Status badge */}
-                                    <div className="absolute top-4 right-4 backdrop-blur-md bg-black/40 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/10 shadow-lg">
+                                    <div className="absolute top-4 right-4 backdrop-blur-md bg-black/40 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-black/10 shadow-lg">
                                         {project.status}
                                     </div>
                                 </div>
@@ -127,7 +121,7 @@ export default function ProjectsClient({ initialProjects }: { initialProjects: P
                 </motion.div>
 
                 {filteredProjects.length === 0 && (
-                    <div className="text-center text-muted-foreground py-20 bg-card rounded-3xl border border-white/5">
+                    <div className="text-center text-muted-foreground py-20 bg-card rounded-3xl border border-black/5">
                         No projects found for this category.
                     </div>
                 )}

@@ -2,25 +2,38 @@
 
 @theme {
   --font-sans: var(--font-inter);
-  
-  --color-primary: #003D3D;
-  --color-primary-dark: #0A2F2F;
-  --color-accent: #E8B923;
-  --color-accent-hover: #D4A81E;
-  
-  --color-background: #041414;
-  --color-foreground: #F5F5F5;
-  --color-card: #0A2F2F;
-  --color-card-foreground: #F5F5F5;
-  --color-muted: #134E4E;
-  --color-muted-foreground: #A0B0B0;
-  --color-border: #134E4E;
+
+
+  --color-primary: #0b4a52;       /* Dark teal (logo background) */
+--color-primary-dark: #07363c;  /* Deeper teal for hover/headers */
+--color-accent: #e3b23c;        /* Gold (moon color) */
+--color-accent-hover: #c99a2f;  /* Darker gold */
+
+
+
+
+
+  /* --color-primary: #0052cc;
+  /* Bright tech blue */
+  /* --color-primary-dark: #003d99; */
+  /* Deeper blue for hover/headers */
+  /* --color-accent: #ff6b00; */
+  /* Vivid orange for badges/icons */
+  /* --color-accent-hover: #e56000;  */
+
+  --color-background: #FFFFFF;
+  --color-foreground: #111827;
+  --color-card: #F9FAFB;
+  --color-card-foreground: #111827;
+  --color-muted: #F3F4F6;
+  --color-muted-foreground: #6B7280;
+  --color-border: #E5E7EB;
 }
 
 @layer base {
   :root {
-    --background: #041414;
-    --foreground: #F5F5F5;
+    --background: #FFFFFF;
+    --foreground: #111827;
   }
 }
 
@@ -36,13 +49,16 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--color-background);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-primary);
   border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-accent);
 }

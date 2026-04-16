@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -30,23 +31,29 @@ export default function Navbar() {
         { name: "Projects", href: "/projects" },
         { name: "Gallery", href: "/gallery" },
         { name: "Team", href: "/team" },
-        { name: "Contact", href: "/contact" },
     ];
 
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-                ? "bg-primary-dark/95 backdrop-blur-md shadow-lg py-4 border-b border-white/5"
+                ? "bg-background/95 backdrop-blur-md shadow-lg py-4 border-b border-black/5"
                 : "bg-transparent py-6"
                 }`}
         >
             <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group z-50">
-                    <Moon className="w-8 h-8 text-accent transition-transform group-hover:rotate-12" />
+                    <Image
+                        src="/logo.png"
+                        alt="Moon Engineering Consultancy Logo"
+                        width={48}
+                        height={48}
+                        className="h-10 w-auto transition-transform group-hover:scale-105"
+                        priority
+                    />
                     <div className="flex flex-col">
                         <span className="text-xl font-bold leading-tight tracking-wide text-foreground">Moon Engineering</span>
-                        <span className="text-[10px] text-accent tracking-[0.2em] uppercase font-bold">Consultancy</span>
+                        <span className="text-[10px] text-primary tracking-[0.2em] uppercase font-bold">Consultancy</span>
                     </div>
                 </Link>
 
@@ -105,7 +112,7 @@ export default function Navbar() {
                                     <Link
                                         href={link.href}
                                         onClick={() => setMobileMenuOpen(false)}
-                                        className="text-2xl font-bold text-foreground hover:text-accent block py-2 border-b border-white/10"
+                                        className="text-2xl font-bold text-foreground hover:text-accent block py-2 border-b border-black/10"
                                     >
                                         {link.name}
                                     </Link>

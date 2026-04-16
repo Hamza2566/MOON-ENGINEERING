@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { Moon, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#030d0d] pt-20 pb-8 border-t border-white/5 relative overflow-hidden">
+        <footer className="bg-background pt-20 pb-8 border-t border-black/5 relative overflow-hidden">
             {/* Decorative background circle */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
@@ -11,11 +12,17 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand */}
                     <div className="flex flex-col gap-6">
-                        <Link href="/" className="flex items-center gap-2">
-                            <Moon className="w-8 h-8 text-accent" />
+                        <Link href="/" className="flex items-center gap-2 w-max">
+                            <Image
+                                src="/logo.png"
+                                alt="Moon Engineering Consultancy Logo"
+                                width={56}
+                                height={56}
+                                className="h-12 w-auto"
+                            />
                             <div className="flex flex-col">
                                 <span className="text-xl font-bold leading-tight tracking-wide text-foreground">Moon Engineering</span>
-                                <span className="text-[10px] text-accent tracking-[0.2em] uppercase font-bold">Consultancy</span>
+                                <span className="text-[10px] text-primary tracking-[0.2em] uppercase font-bold">Consultancy</span>
                             </div>
                         </Link>
                         <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
@@ -76,13 +83,11 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
                     <p className="text-muted-foreground text-sm text-center md:text-left">
                         &copy; 2026 Moon Engineering Consultancy. All rights reserved.
                     </p>
-                    <div className="flex flex-wrap items-center justify-center gap-6">
-                        <span className="text-xs text-muted-foreground/60 font-medium">Powered by Sanity</span>
-                    </div>
+                   
                 </div>
             </div>
         </footer>

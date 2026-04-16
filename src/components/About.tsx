@@ -12,9 +12,9 @@ export default function About() {
     ];
 
     return (
-        <section id="about" className="py-28 bg-background relative border-b border-white/5 overflow-hidden">
+        <section id="about" className="py-28 bg-background relative border-b border-black/5 overflow-hidden">
             {/* Decorative gradient */}
-            <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] -translate-x-1/2 pointer-events-none" />
+            <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-muted rounded-full blur-[100px] -translate-x-1/2 pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-8 relative z-10 w-full">
                 <div className="flex flex-col items-center mb-20 text-center">
@@ -50,9 +50,9 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true, margin: "-50px" }}
-                            className="bg-card p-10 rounded-3xl border border-white/5 hover:border-accent/40 hover:bg-card/80 transition-all duration-300 group shadow-lg hover:shadow-accent/5 backdrop-blur-sm"
+                            className="bg-card p-10 rounded-3xl border border-black/5 hover:border-accent/40 hover:bg-card/80 transition-all duration-300 group shadow-lg hover:shadow-accent/5 backdrop-blur-sm"
                         >
-                            <div className="w-16 h-16 bg-primary/40 text-accent rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                            <div className="w-16 h-16 bg-muted-foreground/10 text-accent rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-inner">
                                 {v.icon}
                             </div>
                             <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-accent transition-colors">{v.title}</h3>
@@ -61,7 +61,7 @@ export default function About() {
                     ))}
                 </div>
 
-                <div className="mt-24 p-10 md:p-16 bg-card/50 rounded-3xl border border-white/5 flex flex-col lg:flex-row items-center justify-between gap-16 backdrop-blur-md relative overflow-hidden">
+                <div className="mt-24 p-10 md:p-16 bg-card/50 rounded-3xl border border-black/5 flex flex-col lg:flex-row items-center justify-between gap-16 backdrop-blur-md relative overflow-hidden">
                     {/* Abstract shape */}
                     <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-accent/5 rounded-full blur-[50px] pointer-events-none" />
 
@@ -89,7 +89,7 @@ export default function About() {
                         <div className="absolute inset-0 bg-primary-dark/40 mix-blend-multiply z-10 transition-opacity group-hover:opacity-0 duration-500" />
                         <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent z-10" />
                         <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
-                        <div className="absolute bottom-4 left-4 right-4 bg-background/80 backdrop-blur-md border border-white/10 p-4 rounded-xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                        <div className="absolute bottom-4 left-4 right-4 bg-background/80 backdrop-blur-md border border-black/10 p-4 rounded-xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                             <p className="font-bold text-accent text-center tracking-wide uppercase text-sm">Engineering The Future</p>
                         </div>
                     </div>

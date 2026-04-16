@@ -40,8 +40,8 @@ export default function Contact() {
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
-                        <div className="bg-card p-8 rounded-2xl border border-white/5 space-y-6">
-                            <h3 className="text-2xl font-bold text-foreground border-b border-white/10 pb-4">Contact Information</h3>
+                        <div className="bg-card p-8 rounded-2xl border border-black/5 space-y-6">
+                            <h3 className="text-2xl font-bold text-foreground border-b border-black/10 pb-4">Contact Information</h3>
 
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 rounded-full bg-primary/40 flex items-center justify-center text-accent shrink-0">
@@ -82,7 +82,7 @@ export default function Contact() {
                         </div>
 
                         {/* Map iframe placeholder */}
-                        <div className="h-64 rounded-2xl overflow-hidden border border-white/5 bg-muted/20 relative">
+                        <div className="h-64 rounded-2xl overflow-hidden border border-black/5 bg-muted/20 relative">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126131.78917804975!2d42.71536761596707!3d9.351296434440316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1630c72c1c9af2cd%3A0xc6cb517ddbb15b6d!2sJijiga%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1707000000000!5m2!1sen!2sus"
                                 width="100%"
@@ -112,22 +112,22 @@ export default function Contact() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div className="space-y-2">
                                     <label htmlFor="name" className="text-sm font-medium text-muted-foreground">Full Name</label>
-                                    <input type="text" id="name" className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" placeholder="John Doe" />
+                                    <input type="text" id="name" className="w-full bg-background border border-black/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" placeholder="John Doe" />
                                 </div>
                                 <div className="space-y-2">
                                     <label htmlFor="email" className="text-sm font-medium text-muted-foreground">Email Address</label>
-                                    <input type="email" id="email" className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" placeholder="john@example.com" />
+                                    <input type="email" id="email" className="w-full bg-background border border-black/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" placeholder="john@example.com" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div className="space-y-2">
                                     <label htmlFor="phone" className="text-sm font-medium text-muted-foreground">Phone Number</label>
-                                    <input type="tel" id="phone" className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" placeholder="+251..." />
+                                    <input type="tel" id="phone" className="w-full bg-background border border-black/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" placeholder="+251..." />
                                 </div>
                                 <div className="space-y-2">
                                     <label htmlFor="service" className="text-sm font-medium text-muted-foreground">Service Interested In</label>
-                                    <select id="service" className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all appearance-none">
+                                    <select id="service" className="w-full bg-background border border-black/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all appearance-none">
                                         <option value="">Select a service</option>
                                         <option value="civil">Civil & Structural</option>
                                         <option value="mep">Mechanical & Electrical</option>
@@ -139,7 +139,7 @@ export default function Contact() {
 
                             <div className="space-y-2">
                                 <label htmlFor="message" className="text-sm font-medium text-muted-foreground">Your Message</label>
-                                <textarea id="message" rows={4} className="w-full bg-background border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all resize-none" placeholder="Tell us about your project..."></textarea>
+                                <textarea id="message" rows={4} className="w-full bg-background border border-black/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all resize-none" placeholder="Tell us about your project..."></textarea>
                             </div>
 
                             <button className="w-full bg-accent text-primary-dark font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-accent-hover transition-all hover:scale-[1.02] shadow-lg">
