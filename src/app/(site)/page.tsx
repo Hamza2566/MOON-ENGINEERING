@@ -167,7 +167,7 @@ export default async function Home() {
               <p className="text-white/80 text-xl leading-relaxed mb-10 max-w-xl">
                 We combine un-matched technical knowledge, internationally standardized safety practices, and an unwavering commitment to sustainable community development.
               </p>
-              <Link href="/#contact" className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-dark text-white font-bold py-4 px-10 rounded-lg flex items-center justify-center w-full sm:w-max transition-all group">
+              <Link href="/contact" className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-dark text-white font-bold py-4 px-10 rounded-lg flex items-center justify-center w-full sm:w-max transition-all group">
                 Discuss Your Next Project
               </Link>
             </div>

@@ -45,7 +45,7 @@ export default function AboutPage() {
                                 <Link href="/projects" className="bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-8 rounded-md flex items-center justify-center gap-2 transition-all shadow-md group">
                                     Our Projects <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </Link>
-                                <Link href="/#contact" className="bg-accent hover:bg-accent-hover text-white font-bold py-3.5 px-8 rounded-md flex items-center justify-center gap-2 transition-all shadow-md">
+                                <Link href="/contact" className="bg-accent hover:bg-accent-hover text-white font-bold py-3.5 px-8 rounded-md flex items-center justify-center gap-2 transition-all shadow-md">
                                     Work With Us
                                 </Link>
                             </div>
@@ -212,10 +212,10 @@ export default function AboutPage() {
                         Whether you need a feasibility study, detailed design, or full-scale construction supervision in extreme climates, we are your trusted local experts.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link href="/#contact" className="bg-accent hover:bg-accent-hover text-white font-bold py-4 px-10 rounded-md w-full sm:w-auto transition-all shadow-lg text-lg">
+                        <Link href="/contact" className="bg-accent hover:bg-accent-hover text-white font-bold py-4 px-10 rounded-md w-full sm:w-auto transition-all shadow-lg text-lg">
                             Contact Our Team &gt;
                         </Link>
-                        <Link href="/#services" className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-dark text-white font-bold py-4 px-10 rounded-md w-full sm:w-auto transition-all text-lg">
+                        <Link href="/services" className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-dark text-white font-bold py-4 px-10 rounded-md w-full sm:w-auto transition-all text-lg">
                             Explore Our Services
                         </Link>
                     </div>
@@ -229,7 +229,7 @@ export default function AboutPage() {
                         <h3 className="text-2xl font-bold mb-2">Ready to Start Your Next Project?</h3>
                         <p className="text-white/80 font-medium">The multidisciplinary team is ready to deliver world-class sustainable solutions.</p>
                     </div>
-                    <Link href="/#contact" className="bg-transparent border border-white hover:bg-white hover:text-accent font-bold py-3 px-8 text-white rounded transition-colors shrink-0">
+                    <Link href="/contact" className="bg-transparent border border-white hover:bg-white hover:text-accent font-bold py-3 px-8 text-white rounded transition-colors shrink-0">
                         Book a Call
                     </Link>
                 </div>

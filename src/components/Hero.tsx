@@ -50,7 +50,7 @@ export default function Hero() {
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                         <Link
-                            href="/#contact"
+                            href="/contact"
                             className="flex items-center justify-center gap-2 border-2 border-white/20 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:bg-white/5 hover:border-white/40 w-full sm:w-auto"
                         >
                             Get In Touch
