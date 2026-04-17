@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Target, Eye, Flag, ShieldCheck } from "lucide-react";
+import { Target, Eye, Flag, ShieldCheck, CheckCircle2, Users, Heart } from "lucide-react";
 
 export default function About() {
     const values = [
-        { icon: <Target className="w-8 h-8" />, title: "Quality & Excellence", desc: "A commitment to delivering top-tier engineering results." },
-        { icon: <ShieldCheck className="w-8 h-8" />, title: "Integrity", desc: "Upholding professional ethics, transparency, and accountability." },
-        { icon: <Eye className="w-8 h-8" />, title: "Innovation", desc: "Embracing modern technologies and sustainable practices." },
-        { icon: <Flag className="w-8 h-8" />, title: "Client Focus", desc: "Ensuring customer satisfaction through collaborative solutions." },
+        { icon: <Target className="w-8 h-8" />, title: "Leadership", desc: "We lead the marketplace through Vision, Technology and Service, striving for excellence." },
+        { icon: <ShieldCheck className="w-8 h-8" />, title: "Integrity", desc: "We treat everyone with dignity and respect, keeping our promises and delivering on our commitments." },
+        { icon: <Eye className="w-8 h-8" />, title: "Innovation", desc: "Our industry thrives on innovation; creative problem solving is fundamental to our success." },
+        { icon: <Flag className="w-8 h-8" />, title: "Client Focus", desc: "Our strategy and services are developed with the success and satisfaction of our clients in mind." },
+        { icon: <CheckCircle2 className="w-8 h-8" />, title: "Responsibility", desc: "We continuously drive projects forward, working with a sense of urgency to deliver high-quality work." },
+        { icon: <Users className="w-8 h-8" />, title: "Teamwork", desc: "Committed to working together, sharing ideas, technologies, and talents to achieve our goals." },
+        { icon: <Heart className="w-8 h-8" />, title: "Passion", desc: "We strive to achieve the best through sheer determination, focus, and hard work." },
     ];
 
     return (
@@ -38,7 +41,7 @@ export default function About() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="text-muted-foreground max-w-4xl text-xl leading-relaxed"
                     >
-                        Established in Jigjiga, Somali Region, Ethiopia, Moon Engineering Consultancy is a leading multidisciplinary firm committed to transforming the Horn of Africa through sustainable and resilient infrastructure. Our team combines international standards with deep local expertise to deliver exceptional results.
+                        Established in 2019 E.C in Jigjiga, Somali Region, Ethiopia, Moon Engineering Consultancy is a multi-disciplinary company offering comprehensive construction, engineering, and infrastructure development solutions. With proven capabilities and a commitment to excellence, we deliver both governmental and non-governmental projects with innovative designs and tailored engineering approaches.
                     </motion.p>
                 </div>
 
@@ -50,7 +53,7 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true, margin: "-50px" }}
-                            className="bg-card p-10 rounded-3xl border border-black/5 hover:border-accent/40 hover:bg-card/80 transition-all duration-300 group shadow-lg hover:shadow-accent/5 backdrop-blur-sm"
+                            className={`bg-card p-10 rounded-3xl border border-black/5 hover:border-accent/40 hover:bg-card/80 transition-all duration-300 group shadow-lg hover:shadow-accent/5 backdrop-blur-sm ${i === 6 ? 'lg:col-span-2' : ''}`}
                         >
                             <div className="w-16 h-16 bg-muted-foreground/10 text-accent rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-inner">
                                 {v.icon}
@@ -72,14 +75,14 @@ export default function About() {
                                 <div className="w-1.5 bg-accent rounded-full shrink-0" />
                                 <p className="text-muted-foreground text-lg leading-relaxed">
                                     <strong className="text-foreground block mb-1 uppercase tracking-wider text-sm">Vision</strong>
-                                    To be the premier engineering consultancy in the Horn of Africa, recognized for engineering excellence, sustainability, and transformative solutions that drive regional development.
+                                    To act ethically, sustainably, and profitably while delivering engineering consulting services that exceed client expectations and contribute to social and environmental development. To become a world-class infrastructure construction and consultancy company.
                                 </p>
                             </div>
                             <div className="flex gap-4">
                                 <div className="w-1.5 bg-primary rounded-full shrink-0" />
                                 <p className="text-muted-foreground text-lg leading-relaxed">
                                     <strong className="text-foreground block mb-1 uppercase tracking-wider text-sm">Mission</strong>
-                                    To provide innovative, reliable, and high-quality engineering services across civil, structural, and multidisciplinary sectors, fostering growth and improving the quality of life in the communities we serve.
+                                    To provide sustainable and high-quality engineering and consultancy solutions, deliver projects on time and within budget, maintain professionalism and transparency, and achieve customer satisfaction through quality service.
                                 </p>
                             </div>
                         </div>

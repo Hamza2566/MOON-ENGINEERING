@@ -9,92 +9,92 @@ export default function Services() {
     const detailedServices = [
         {
             id: "01",
-            title: "Irrigation System Design & Engineering",
-            description: "Comprehensive irrigation network development ensuring optimal water distribution and sustainable usage.",
+            title: "Engineering Services",
+            description: "Comprehensive multi-disciplinary engineering design and execution across all major structural and civil sectors.",
             deliverables: [
-                "Location mapping and feasibility studies",
-                "Surface irrigation system design (canal, flumes, pipelines, etc)",
-                "Hydraulic structure design (weirs, diversion dams, reservoirs)",
-                "Irrigation demand based crop planning",
-                "Pumping station design and specifications"
+                "Civil & Structural Engineering",
+                "Mechanical & Electrical Engineering",
+                "Geotechnical Engineering",
+                "Feasibility Studies & Conceptual Design",
+                "Water & Wastewater Engineering"
             ],
-            image: "https://images.unsplash.com/photo-1482053450283-3e0b78b09a70?q=80&w=1000&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
         },
         {
             id: "02",
-            title: "Hydrology & Water Resources",
-            description: "Advanced water resource assessments and management frameworks for challenging ecological environments.",
+            title: "Architectural Services",
+            description: "State-of-the-art architectural facility design from initial planning through to completion with a sustainable agenda.",
             deliverables: [
-                "Hydrological data collection and analysis",
-                "Flood frequency analysis and floodplain delineation",
-                "Drainage channel and structure design",
-                "Water balance modelling",
-                "Groundwater potential assessments"
+                "Master Planning & Urban Design",
+                "Residential & Commercial Design",
+                "Mixed-use & Hospitality Projects",
+                "Educational & Healthcare Facilities",
+                "Landscaping & Interior Design"
             ],
-            image: "https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?q=80&w=1000&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
         },
         {
             id: "03",
-            title: "Geotechnical Studies & Ecological Investigations",
-            description: "Site investigation, laboratory testing, and foundation engineering ensuring structural safety and integrity.",
+            title: "Infrastructure Management",
+            description: "World-class program advisory and management capabilities ensuring projects are delivered systematically and resourcefully.",
             deliverables: [
-                "Core geological and geotechnical surveys",
-                "Sample collection, and borehole logging",
-                "Laboratory soil and rock testing",
-                "Foundation construction recommendations",
-                "Slope stability analysis"
+                "Program & Risk Management",
+                "Systems Engineering & Integration",
+                "Project Planning & Control",
+                "Resource Allocation",
+                "Financial Control"
             ],
-            image: "https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1000&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=1000&auto=format&fit=crop"
         },
         {
             id: "04",
-            title: "Solar-Pump Systems",
-            description: "Off-grid solar powered water pumping arrays for agricultural and community supply networks.",
+            title: "Environmental Services",
+            description: "Rigorous environmental studies ensuring compliance and mitigating risks associated with ecological development.",
             deliverables: [
-                "Solar radiation and energy demand assessment",
-                "Pump sizing and hydraulic design",
-                "Photovoltaic panel system arrangement",
-                "Inverter selection and control system specification",
-                "Performance and installation supervision"
-            ],
-            image: "https://images.unsplash.com/photo-1498631906572-66c58d46ecf7?q=80&w=1000&auto=format&fit=crop"
-        },
-        {
-            id: "05",
-            title: "GIS, Remote Sensing & Surveying",
-            description: "Topographic surveying, mapping, modeling, and spatial data analytics for precision engineering.",
-            deliverables: [
-                "Topographic surveys (total station, RTK-DGPS, drone)",
-                "Digital Elevation Model (DEM) production",
-                "Land use / land cover mapping",
-                "Satellite image analysis and classification",
-                "Cadastral and boundary surveying"
-            ],
-            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"
-        },
-        {
-            id: "06",
-            title: "Environmental Impact Assessment",
-            description: "Rigorous ESIA and ESMP in compliance with local regulations and international standards.",
-            deliverables: [
-                "Environmental and social baseline surveys",
-                "Identification and screening of potential impacts",
-                "Environmental and Social Management Plan (ESMP)",
-                "Monitoring and performance indicator frameworks",
-                "Rehabilitation, green cover repair protocols"
+                "Environmental impact assessment",
+                "Risk evaluation and mitigation",
+                "Sustainable development consulting",
+                "Environmental compliance advisory",
+                "Ecosystem restoration planning"
             ],
             image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
         },
         {
-            id: "07",
-            title: "Construction Supervision",
-            description: "On-site project management, ensuring contract compliance, safety, quality, and timely delivery.",
+            id: "05",
+            title: "Road & Bridge Engineering",
+            description: "Specialized engineering approach dedicated to complex highway infrastructure, site modeling, and bridge dynamics.",
             deliverables: [
-                "Resident Engineer and site inspector deployment",
-                "Contractor activity monitoring and oversight",
-                "Pre-construction mobilization checkups",
-                "Quality assurance & materials testing compliance",
-                "Milestone approvals and phase clearing"
+                "Road design (minor & major roads)",
+                "Highway alignment & site modeling",
+                "Bridge design & supervision",
+                "BOQ preparation & tendering",
+                "Construction supervision"
+            ],
+            image: "https://images.unsplash.com/photo-1545622708-0112aa2e70e1?q=80&w=1000&auto=format&fit=crop"
+        },
+        {
+            id: "06",
+            title: "Land Surveying",
+            description: "Precision topographic surveying, modeling, and spatial data analytics laying the foundation for correct engineering.",
+            deliverables: [
+                "GPS & Boundary Surveys",
+                "Topographic & Site Planning Surveys",
+                "Subdivision Planning",
+                "Photogrammetry",
+                "Geospatial Database Generation"
+            ],
+            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"
+        },
+        {
+            id: "07",
+            title: "Project & Consultancy Services",
+            description: "End-to-end administration and consulting designed to bring certainty to scheduling, cost, and contractual compliance.",
+            deliverables: [
+                "Project Management & Construction Supervision",
+                "Contract Administration & Cost Consulting",
+                "Procurement Documentation",
+                "Urban & Regional Planning",
+                "IT Systems for Engineering Projects"
             ],
             image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop"
         }

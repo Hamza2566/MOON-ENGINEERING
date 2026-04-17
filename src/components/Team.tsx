@@ -12,21 +12,15 @@ export default function Team() {
             image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop"
         },
         {
-            name: "Eng. Placeholder One",
-            role: "Lead Structural Engineer",
-            bio: "Specializing in the structural integrity of high-rise buildings and complex bridge designs.",
-            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
-        },
-        {
-            name: "Eng. Placeholder Two",
-            role: "Project Manager",
-            bio: "Ensuring effective project delivery, keeping sites safe, on schedule, and within budget.",
+            name: "Mohamed Abdiwahid",
+            role: "Deputy Manager",
+            bio: "Assisting in strategic operations and overseeing day-to-day engineering and project executions.",
             image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"
         },
         {
-            name: "Eng. Placeholder Three",
-            role: "Geotechnical Specialist",
-            bio: "Expertise in soil mechanics and comprehensive foundation solutions for regional topography.",
+            name: "Farhan Abdirisak",
+            role: "Board Member",
+            bio: "Providing executive oversight and strategic guidance to advance Moon Engineering's goals.",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
         }
     ];
@@ -34,7 +28,7 @@ export default function Team() {
     return (
         <section id="team" className="py-24 bg-background relative border-b border-black/5">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}

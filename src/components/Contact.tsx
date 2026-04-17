@@ -49,7 +49,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold text-foreground mb-1">Head Office Location</h4>
-                                    <p className="text-muted-foreground">Jigjiga, Somali Region, Ethiopia</p>
+                                    <p className="text-muted-foreground">Kaah Building, Jigjiga, Somali Region, Ethiopia</p>
                                 </div>
                             </div>
 

@@ -64,7 +64,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-4">
                             <div className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                                <span className="text-muted-foreground text-sm">Jigjiga, Somali Region, Ethiopia</span>
+                                <span className="text-muted-foreground text-sm">Kaah Building, Jigjiga, Somali Region, Ethiopia</span>
                             </div>
                             <div className="flex items-start gap-3">
                                 <Phone className="w-5 h-5 text-accent shrink-0 mt-0.5" />
@@ -87,7 +87,7 @@ export default function Footer() {
                     <p className="text-muted-foreground text-sm text-center md:text-left">
                         &copy; 2026 Moon Engineering Consultancy. All rights reserved.
                     </p>
-                   
+
                 </div>
             </div>
         </footer>

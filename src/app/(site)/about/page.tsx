@@ -19,7 +19,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 md:px-8 text-center relative z-10">
                     <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg tracking-tight">About MOON</h1>
                     <p className="text-white/80 text-xl max-w-2xl mx-auto leading-relaxed">
-                        A multidisciplinary engineering and geology consultancy delivering sustainable solutions for local climates, infrastructure, and the environment across the Horn of Africa.
+                        A multi-disciplinary engineering company operating in the Somali Regional State of Ethiopia, specializing in construction, engineering consultancy, and infrastructure development.
                     </p>
                 </div>
             </section>
@@ -35,10 +35,10 @@ export default function AboutPage() {
                                 Rooted in Jigjiga.<br />Delivering Across the Horn.
                             </h2>
                             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                                Moon is an award-winning, multidisciplinary practice based in the capital city of Jigjiga, Somali Region, Ethiopia. With an intent to elevate world-class engineering consultancy tailored around the unique challenges of the Horn of Africa's arid and semi-arid environments.
+                                Established in 2019 E.C in Jigjiga, Somali Region, Ethiopia, Moon Engineering Consultancy is a multi-disciplinary company offering comprehensive construction, engineering, and infrastructure development solutions. We specialize in designing, building, and managing civil engineering projects including buildings, roads, bridges, and water systems.
                             </p>
                             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                                Over more than a decade, our team of resident engineers, geologists, hydrologists, and GIS specialists has partnered with international organizations including FAO, UNDP, the World Bank, and the Ethiopian government to design and supervise transformative infrastructure projects across water resources, irrigation, and renewable energy sectors.
+                                Our firm caters to both governmental and non-governmental projects, known for consistently delivering high-quality work with efficiency, innovation, and professionalism. Using modern design technologies and customized strategies, we prioritize delivering tailored solutions that exceed our clients' expectations.
                             </p>
 
                             <div className="flex items-center gap-4">
@@ -75,41 +75,47 @@ export default function AboutPage() {
                         <h2 className="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Our Core Values</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
-                            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-                                <Target className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Excellence & Precision</h3>
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Leadership</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                We apply the highest engineering standards and rigorous design in every project, ensuring structurally sound and optimized outcomes.
+                                We lead the marketplace through Vision, Technology and Service. In everything that we do, we strive for excellence and accept no less than the best.
                             </p>
                         </div>
                         <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
-                            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-                                <Droplets className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Sustainable Focus</h3>
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Teamwork</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                Our solutions are aligned with climate action, embedding water and soil conservation into the structural capability of local communities.
+                                We are committed to working together across divisions. By sharing ideas, technologies, and talents, we achieve and sustain profitable growth.
                             </p>
                         </div>
                         <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
-                            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-                                <ShieldCheck className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Integrity & Transparency</h3>
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Client Focus</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                We operate with the highest standards of professional ethics, building long-term trust with clients, peers, and local governments.
+                                We never lose sight of what really matters: the satisfaction and success of our clients. Our strategy and services are developed with their goals in mind.
                             </p>
                         </div>
                         <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
-                            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-                                <HeartHandshake className="w-6 h-6" />
-                            </div>
-                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Local Expertise</h3>
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Responsibility</h3>
                             <p className="text-muted-foreground leading-relaxed">
-                                Deeply rooted in the Horn of Africa, we leverage our profound localized knowledge across physical geography, geology, climate, and distinct culture context.
+                                We continuously drive projects forward through rigorous follow-up and review. We work with urgency and always deliver on our promises.
+                            </p>
+                        </div>
+                        <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Innovation</h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                                Our industry thrives on innovation; creative problem solving is fundamental to our success. We continuously attempt to deliver superior value.
+                            </p>
+                        </div>
+                        <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Integrity</h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                                We treat everyone with dignity and respect. We are truthful and candid, keep our promises, and make diversity a competitive strength across the board.
+                            </p>
+                        </div>
+                        <div className="bg-card rounded-2xl p-10 border border-black/5 shadow-sm hover:shadow-lg transition-shadow lg:col-start-2">
+                            <h3 className="text-xl font-bold text-primary mb-4 leading-snug">Passion</h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                                We strive to achieve the best in the face of intense competition through sheer determination, focus, and hard work in every aspect of our project delivery.
                             </p>
                         </div>
                     </div>
@@ -123,23 +129,21 @@ export default function AboutPage() {
 
                         {/* Expertise Side */}
                         <div className="w-full lg:w-1/2 max-w-lg mx-auto lg:mx-0">
-                            <span className="text-accent font-extrabold uppercase tracking-widest text-sm mb-4 block">Areas of Focus</span>
-                            <h2 className="text-4xl font-extrabold text-primary mb-8 tracking-tight">Areas of Technical Expertise</h2>
+                            <span className="text-accent font-extrabold uppercase tracking-widest text-sm mb-4 block">Our Strengths</span>
+                            <h2 className="text-4xl font-extrabold text-primary mb-8 tracking-tight">Why Choose Moon Consultancy</h2>
                             <p className="text-muted-foreground mb-8 leading-relaxed">
-                                MOON provides a comprehensive suite of front-end engineering and consultancy services, integrating multiple disciplines to deliver holistic solutions.
+                                We combine technical expertise, rigorous project management, and sustainable engineering approaches to ensure every project is completed on time, within budget, and to the highest standards.
                             </p>
                             <ul className="flex flex-col gap-4">
                                 {[
-                                    "Irrigation Engineering & Hydraulic Structures",
-                                    "Hydrology & Flood Analysis",
-                                    "Groundwater Assessment & Borehole Design",
-                                    "Geotechnical & Geological Investigations",
-                                    "Solar-Pump System Engineering",
-                                    "GIS, Remote Sensing & Spatial Analysis",
-                                    "Environmental & Social Impact Assessment",
-                                    "Construction Supervision & Quality Assurance",
-                                    "Feasibility & Detailed Engineering Studies",
-                                    "Land Use Planning & Resource Mapping"
+                                    "Multi-disciplinary engineering capability",
+                                    "Highly experienced technical team",
+                                    "Strong & rigorous project management",
+                                    "Extensive government & international project experience",
+                                    "Unwavering focus on sustainability",
+                                    "Utilization of modern engineering technology",
+                                    "Proven ability to handle large-scale infrastructural projects",
+                                    "Consistent on-time and cost-effective delivery"
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-4">
                                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
@@ -160,10 +164,10 @@ export default function AboutPage() {
                                 {/* Milestone 1 */}
                                 <div className="relative pl-10">
                                     <div className="absolute -left-[21px] top-0 w-10 h-10 bg-accent rounded-full border-4 border-background flex items-center justify-center shadow-md">
-                                        <span className="text-[10px] font-bold text-white">2015</span>
+                                        <span className="text-[10px] font-bold text-white">2019</span>
                                     </div>
                                     <h4 className="text-lg font-bold text-primary mb-2">Firm Establishment</h4>
-                                    <p className="text-sm text-muted-foreground">Moon Engineering Consultancy founded in Jigjiga, Somali Region, Ethiopia.</p>
+                                    <p className="text-sm text-muted-foreground">Moon Engineering Consultancy was officially founded in Jigjiga, Somali Region, Ethiopia (2019 E.C).</p>
                                 </div>
                                 {/* Milestone 2 */}
                                 <div className="relative pl-10">
@@ -200,6 +204,65 @@ export default function AboutPage() {
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* Project Experience Section */}
+            <section className="py-24 bg-muted/50 border-t border-black/5">
+                <div className="container mx-auto px-4 md:px-8">
+                    <div className="text-center mb-16 max-w-3xl mx-auto">
+                        <span className="text-accent font-extrabold uppercase tracking-widest text-sm mb-4 block">Proven Track Record</span>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Featured Project Experience</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        {/* Bridge Projects */}
+                        <div className="bg-card rounded-2xl p-8 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
+                            <h3 className="text-xl font-bold text-primary mb-3">Bridge Projects</h3>
+                            <p className="text-muted-foreground font-semibold mb-4 text-sm">Gabi'as & Ber'ano Bridge</p>
+                            <ul className="text-muted-foreground text-sm space-y-2">
+                                <li><strong className="text-foreground">Value:</strong> ~596,491 USD</li>
+                                <li><strong className="text-foreground">Scope:</strong> Design review, Construction supervision, Quality assurance, Safety monitoring</li>
+                            </ul>
+                        </div>
+
+                        {/* Building Project */}
+                        <div className="bg-card rounded-2xl p-8 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
+                            <h3 className="text-xl font-bold text-primary mb-3">Building Projects</h3>
+                            <p className="text-muted-foreground font-semibold mb-4 text-sm">G+4 Laboratory, Office & Storage Building (Bahirdar)</p>
+                            <ul className="text-muted-foreground text-sm space-y-2">
+                                <li><strong className="text-foreground">Scope:</strong> Design, Supervision, Contract management</li>
+                            </ul>
+                        </div>
+
+                        {/* Irrigation Projects */}
+                        <div className="bg-card rounded-2xl p-8 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
+                            <h3 className="text-xl font-bold text-primary mb-3">Irrigation Projects</h3>
+                            <p className="text-muted-foreground font-semibold mb-4 text-sm">5 Irrigation Schemes & Shebelle River Basin</p>
+                            <ul className="text-muted-foreground text-sm space-y-2">
+                                <li><strong className="text-foreground">Scope:</strong> Feasibility study, Engineering design, Infrastructure planning</li>
+                            </ul>
+                        </div>
+
+                        {/* Water Supply */}
+                        <div className="bg-card rounded-2xl p-8 border border-black/5 shadow-sm hover:shadow-lg transition-shadow">
+                            <h3 className="text-xl font-bold text-primary mb-3">Water Supply</h3>
+                            <p className="text-muted-foreground font-semibold mb-4 text-sm">Legedoa Village Water Distribution</p>
+                            <ul className="text-muted-foreground text-sm space-y-2">
+                                <li><strong className="text-foreground">Scope:</strong> Pipeline supervision, Tank design, Pump installation</li>
+                            </ul>
+                        </div>
+
+                        {/* Road Projects */}
+                        <div className="bg-card rounded-2xl p-8 border border-black/5 shadow-sm hover:shadow-lg transition-shadow lg:col-span-2">
+                            <h3 className="text-xl font-bold text-primary mb-3">Road Projects</h3>
+                            <p className="text-muted-foreground font-semibold mb-4 text-sm">Multiple Regional Roads</p>
+                            <ul className="text-muted-foreground text-sm space-y-2">
+                                <li><strong className="text-foreground">Locations:</strong> 25KM Factory Road (Jijiga), 194KM Gravel Road (Oromia), 93KM Asbuli–Badiwayn Road, Refugee Camp Roads (Dollow Ado)</li>
+                                <li><strong className="text-foreground">Scope:</strong> Road design, Construction supervision, Quality control, Reporting</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
