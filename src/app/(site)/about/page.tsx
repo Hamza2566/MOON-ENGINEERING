@@ -62,7 +62,7 @@ export default function AboutPage() {
                                 <span className="font-extrabold text-3xl text-white block leading-none">5,000+ HA</span>
                                 <span className="text-xs text-white/80 font-semibold uppercase tracking-wider">Projects Delivered</span>
                             </div>
-                        </div>
+                        </div>photo_4_2026-04-20_08-23-08.jpg
                     </div>
                 </div>
             </section>
@@ -262,6 +262,92 @@ export default function AboutPage() {
                                 <li><strong className="text-foreground">Locations:</strong> 25KM Factory Road (Jijiga), 194KM Gravel Road (Oromia), 93KM Asbuli–Badiwayn Road, Refugee Camp Roads (Dollow Ado)</li>
                                 <li><strong className="text-foreground">Scope:</strong> Road design, Construction supervision, Quality control, Reporting</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Architecture Portfolio Gallery */}
+            <section className="py-24 border-t border-black/5">
+                <div className="container mx-auto px-4 md:px-8">
+                    <div className="text-center mb-16 max-w-3xl mx-auto">
+                        <span className="text-accent font-extrabold uppercase tracking-widest text-sm mb-4 block">Design Excellence</span>
+                        <h2 className="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Architecture Portfolio</h2>
+                        <p className="text-muted-foreground text-lg mt-4 leading-relaxed">
+                            From residential villas to mixed-use complexes and urban infrastructure, our architecture designs blend aesthetics with functionality.
+                        </p>
+                    </div>
+
+                    {/* Large featured + 2 side grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-6">
+                        {/* Featured large card */}
+                        <div className="lg:col-span-2 group relative rounded-2xl overflow-hidden shadow-lg border border-black/5 aspect-[16/10]">
+                            <img
+                                src="/arch_residential_jigjiga.jpg"
+                                alt="G+1 Residential Building in Jig-Jiga"
+                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                            <div className="absolute bottom-0 left-0 p-6">
+                                <span className="text-accent text-xs font-extrabold uppercase tracking-widest mb-1 block">Residential</span>
+                                <h3 className="text-white font-bold text-xl">G+1 Residential Building — Jig-Jiga</h3>
+                            </div>
+                        </div>
+
+                        {/* Stack of 2 cards */}
+                        <div className="flex flex-col gap-6">
+                            <div className="group relative rounded-2xl overflow-hidden shadow-lg border border-black/5 flex-1 min-h-[200px]">
+                                <img
+                                    src="/arch_compound_001.jpg"
+                                    alt="Modern Residential Compound"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 p-4">
+                                    <span className="text-accent text-xs font-extrabold uppercase tracking-widest mb-1 block">Compound</span>
+                                    <h3 className="text-white font-bold text-base">Modern Residential Compound</h3>
+                                </div>
+                            </div>
+                            <div className="group relative rounded-2xl overflow-hidden shadow-lg border border-black/5 flex-1 min-h-[200px]">
+                                <img
+                                    src="/arch_mixed_use_jigjiga.jpg"
+                                    alt="G+1 Mixed Use Building in Jig-Jiga"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                                <div className="absolute bottom-0 left-0 p-4">
+                                    <span className="text-accent text-xs font-extrabold uppercase tracking-widest mb-1 block">Mixed-Use</span>
+                                    <h3 className="text-white font-bold text-base">G+1 Mixed Use Building — Jig-Jiga</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Bottom 2-card row */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                        <div className="group relative rounded-2xl overflow-hidden shadow-lg border border-black/5 aspect-[4/3]">
+                            <img
+                                src="/arch_road_urban.jpg"
+                                alt="Road and Urban Design Projects"
+                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                            <div className="absolute bottom-0 left-0 p-6">
+                                <span className="text-accent text-xs font-extrabold uppercase tracking-widest mb-1 block">Urban Design</span>
+                                <h3 className="text-white font-bold text-xl">Road &amp; Urban Design Projects</h3>
+                            </div>
+                        </div>
+                        <div className="group relative rounded-2xl overflow-hidden shadow-lg border border-black/5 aspect-[4/3]">
+                            <img
+                                src="/arch_apartment_g3.jpg"
+                                alt="G+3 Apartment Building"
+                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                            <div className="absolute bottom-0 left-0 p-6">
+                                <span className="text-accent text-xs font-extrabold uppercase tracking-widest mb-1 block">Residential</span>
+                                <h3 className="text-white font-bold text-xl">G+3 Apartment Building</h3>
+                            </div>
                         </div>
                     </div>
                 </div>

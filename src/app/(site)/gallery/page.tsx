@@ -8,8 +8,47 @@ export const metadata = {
 
 export const revalidate = 60;
 
+const ARCHITECTURE_ITEMS = [
+    {
+        _id: "arch-1",
+        title: "G+1 Residential Building — Jig-Jiga",
+        category: "Architecture",
+        imageUrl: "/arch_residential_jigjiga.jpg",
+        caption: "G+1 Residential Building in Jig-Jiga, Somali Region",
+    },
+    {
+        _id: "arch-2",
+        title: "Modern Residential Compound",
+        category: "Architecture",
+        imageUrl: "/arch_compound_001.jpg",
+        caption: "Contemporary residential compound design",
+    },
+    {
+        _id: "arch-3",
+        title: "G+1 Mixed Use Building — Jig-Jiga",
+        category: "Architecture",
+        imageUrl: "/arch_mixed_use_jigjiga.jpg",
+        caption: "G+1 Mixed Use Building in Jig-Jiga, Somali Region",
+    },
+    {
+        _id: "arch-4",
+        title: "Road & Urban Design Projects",
+        category: "Architecture",
+        imageUrl: "/arch_road_urban.jpg",
+        caption: "Road and urban design with roundabout infrastructure",
+    },
+    {
+        _id: "arch-5",
+        title: "G+3 Apartment Building",
+        category: "Architecture",
+        imageUrl: "/arch_apartment_g3.jpg",
+        caption: "G+3 residential apartment building design",
+    },
+];
+
 export default async function GalleryPage() {
     const galleryItems = await fetchGallery();
+    const mergedItems = [...ARCHITECTURE_ITEMS, ...(galleryItems || [])];
     return (
         <div className="min-h-screen bg-background">
             <section className="bg-primary-dark pt-32 pb-20 relative overflow-hidden">
@@ -23,7 +62,7 @@ export default async function GalleryPage() {
                 </div>
             </section>
             <div className="py-24">
-                <GalleryClient initialGallery={galleryItems || []} />
+                <GalleryClient initialGallery={mergedItems} />
             </div>
         </div>
     );
