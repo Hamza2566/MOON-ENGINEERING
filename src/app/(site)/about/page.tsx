@@ -54,7 +54,7 @@ export default function AboutPage() {
                         {/* Image Side */}
                         <div className="w-full lg:w-1/2 relative">
                             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative z-10 border border-black/5">
-                                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop" alt="Engineers surveying terrain" className="w-full h-full object-cover" />
+                                <img src="/photo_4_2026-04-20_08-23-08.jpg" alt="Engineers surveying terrain" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-accent/10 rounded-full blur-3xl z-0 pointer-events-none" />
                             {/* Floating Stats Badge */}
