@@ -29,7 +29,7 @@ export default async function Home() {
             {/* Image Side */}
             <div className="w-full lg:w-1/2 relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative z-10 border border-black/5">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop" alt="Engineering Team" className="w-full h-full object-cover" />
+                <img src="/photo_8_2026-04-20_08-23-08.jpg" alt="Engineering Team" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-accent/10 rounded-full blur-3xl z-0 pointer-events-none" />
               {/* Floating Badge */}
@@ -130,7 +130,7 @@ export default async function Home() {
             {projectsPreview.map((project: any) => (
               <div key={project._id} className="bg-card rounded-[2rem] overflow-hidden border border-black/5 group flex flex-col hover:border-primary/20 transition-colors shadow-lg">
                 <div className="aspect-[4/3] w-full overflow-hidden relative">
-                  <img src={project.featuredImageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={project.featuredImageUrl || "/photo_9_2026-04-20_08-23-08.jpg"} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   {/* Status Badge */}
                   <div className={`absolute top-5 left-5 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-lg shadow-md ${project.status?.toLowerCase() === 'completed' ? 'bg-green-600' : 'bg-accent'}`}>
                     {project.status}

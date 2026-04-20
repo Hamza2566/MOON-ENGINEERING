@@ -18,7 +18,7 @@ export default function Services() {
                 "Feasibility Studies & Conceptual Design",
                 "Water & Wastewater Engineering"
             ],
-            image: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_1_2026-04-20_08-23-08.jpg"
         },
         {
             id: "02",
@@ -31,7 +31,7 @@ export default function Services() {
                 "Educational & Healthcare Facilities",
                 "Landscaping & Interior Design"
             ],
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_2_2026-04-20_08-23-08.jpg"
         },
         {
             id: "03",
@@ -44,7 +44,7 @@ export default function Services() {
                 "Resource Allocation",
                 "Financial Control"
             ],
-            image: "https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_3_2026-04-20_08-23-08.jpg"
         },
         {
             id: "04",
@@ -57,7 +57,7 @@ export default function Services() {
                 "Environmental compliance advisory",
                 "Ecosystem restoration planning"
             ],
-            image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_4_2026-04-20_08-23-08.jpg"
         },
         {
             id: "05",
@@ -70,7 +70,7 @@ export default function Services() {
                 "BOQ preparation & tendering",
                 "Construction supervision"
             ],
-            image: "https://images.unsplash.com/photo-1545622708-0112aa2e70e1?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_5_2026-04-20_08-23-08.jpg"
         },
         {
             id: "06",
@@ -83,7 +83,7 @@ export default function Services() {
                 "Photogrammetry",
                 "Geospatial Database Generation"
             ],
-            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_6_2026-04-20_08-23-08.jpg"
         },
         {
             id: "07",
@@ -96,7 +96,7 @@ export default function Services() {
                 "Urban & Regional Planning",
                 "IT Systems for Engineering Projects"
             ],
-            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop"
+            image: "/photo_7_2026-04-20_08-23-08.jpg"
         }
     ];
 

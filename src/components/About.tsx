@@ -91,13 +91,13 @@ export default function About() {
                         {/* Image placeholder or subtle graphic with overlay */}
                         <div className="absolute inset-0 bg-primary-dark/40 mix-blend-multiply z-10 transition-opacity group-hover:opacity-0 duration-500" />
                         <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent z-10" />
-                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
+                        <div className="w-full h-full bg-[url('/photo_4_2026-04-20_08-23-08.jpg')] bg-cover bg-center group-hover:scale-105 transition-transform duration-700" />
                         <div className="absolute bottom-4 left-4 right-4 bg-background/80 backdrop-blur-md border border-black/10 p-4 rounded-xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                             <p className="font-bold text-accent text-center tracking-wide uppercase text-sm">Engineering The Future</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

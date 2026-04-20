@@ -85,7 +85,7 @@ export default function ProjectsClient({ initialProjects }: { initialProjects: P
                             >
                                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
                                     <img
-                                        src={project.featuredImageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"}
+                                        src={project.featuredImageUrl || "/photo_9_2026-04-20_08-23-08.jpg"}
                                         alt={project.title}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     />

@@ -70,9 +70,9 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
                                 onClick={() => openLightbox(index)}
                             >
                                 <img
-                                    src={item.imageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop"}
+                                    src={item.imageUrl || "/photo_10_2026-04-20_08-23-08.jpg"}
                                     alt={item.title}
-                                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                                     <span className="text-accent text-xs font-bold uppercase tracking-widest mb-1">{item.category}</span>
@@ -110,7 +110,7 @@ export default function GalleryClient({ initialGallery }: { initialGallery: Gall
                         </button>
                         <div className="max-w-6xl w-full px-4 flex flex-col items-center">
                             <img
-                                src={filteredItems[currentIndex].imageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200&auto=format&fit=crop"}
+                                src={filteredItems[currentIndex].imageUrl || "/photo_10_2026-04-20_08-23-08.jpg"}
                                 alt={filteredItems[currentIndex].title}
                                 className="max-h-[80vh] object-contain rounded-xl shadow-2xl"
                             />

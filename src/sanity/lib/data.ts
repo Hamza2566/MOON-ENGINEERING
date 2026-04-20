@@ -39,6 +39,118 @@ const dummyProjects = [
 
 const dummyGallery = [
     {
+        _id: "bg1",
+        title: "Building Site Progress 1",
+        category: "Building",
+        imageUrl: "/photo_1_2026-04-20_08-23-08.jpg",
+        caption: "Site preparation phase.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg2",
+        title: "Building Site Progress 2",
+        category: "Building",
+        imageUrl: "/photo_2_2026-04-20_08-23-08.jpg",
+        caption: "Foundation work.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg3",
+        title: "Building Site Progress 3",
+        category: "Building",
+        imageUrl: "/photo_3_2026-04-20_08-23-08.jpg",
+        caption: "Structural framework.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg4",
+        title: "Building Site Progress 4",
+        category: "Building",
+        imageUrl: "/photo_4_2026-04-20_08-23-08.jpg",
+        caption: "Concrete pouring.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg5",
+        title: "Building Site Progress 5",
+        category: "Building",
+        imageUrl: "/photo_5_2026-04-20_08-23-08.jpg",
+        caption: "Building elevation view.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg6",
+        title: "Building Site Progress 6",
+        category: "Building",
+        imageUrl: "/photo_6_2026-04-20_08-23-08.jpg",
+        caption: "Internal supports.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg7",
+        title: "Building Site Progress 7",
+        category: "Building",
+        imageUrl: "/photo_7_2026-04-20_08-23-08.jpg",
+        caption: "Construction materials and machinery.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg8",
+        title: "Building Site Progress 8",
+        category: "Building",
+        imageUrl: "/photo_8_2026-04-20_08-23-08.jpg",
+        caption: "Ongoing construction work.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg9",
+        title: "Building Site Progress 9",
+        category: "Building",
+        imageUrl: "/photo_9_2026-04-20_08-23-08.jpg",
+        caption: "Site overview.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg10",
+        title: "Building Site Progress 10",
+        category: "Building",
+        imageUrl: "/photo_10_2026-04-20_08-23-08.jpg",
+        caption: "Exterior framework.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg11",
+        title: "Building Site Details 1",
+        category: "Building",
+        imageUrl: "/photo_1_2026-04-20_08-23-18.jpg",
+        caption: "Site details and progress.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg12",
+        title: "Building Site Details 2",
+        category: "Building",
+        imageUrl: "/photo_2_2026-04-20_08-23-18.jpg",
+        caption: "Architectural alignment.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg13",
+        title: "Building Site Details 3",
+        category: "Building",
+        imageUrl: "/photo_3_2026-04-20_08-23-18.jpg",
+        caption: "Structural layout.",
+        date: "2026-04-20"
+    },
+    {
+        _id: "bg14",
+        title: "Building Site Details 4",
+        category: "Building",
+        imageUrl: "/photo_4_2026-04-20_08-23-18.jpg",
+        caption: "Top floor construction.",
+        date: "2026-04-20"
+    },
+    {
         _id: "g1",
         title: "Bridge Foundation Laying",
         category: "Site Progress",
@@ -89,24 +201,23 @@ export async function fetchProjects() {
 }
 
 export async function fetchGallery() {
-    if (projectId === "yoursecretprojectid" || !projectId) {
-        return dummyGallery;
-    }
-
     try {
-        const query = `*[_type == "gallery"] | order(date desc) {
-      _id,
-      title,
-      category,
-      "imageUrl": image.asset->url,
-      caption,
-      date
-    }`;
-        return await client.fetch(query);
+        if (projectId && projectId !== "yoursecretprojectid") {
+            const query = `*[_type == "gallery"] | order(date desc) {
+              _id,
+              title,
+              category,
+              "imageUrl": image.asset->url,
+              caption,
+              date
+            }`;
+            const sanityData = await client.fetch(query);
+            return [...sanityData, ...dummyGallery];
+        }
     } catch (error) {
         console.error("Failed to fetch Sanity gallery:", error);
-        return dummyGallery;
     }
+    return dummyGallery;
 }
 
 export async function fetchProjectBySlug(slug: string) {

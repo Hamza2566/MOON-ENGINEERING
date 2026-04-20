@@ -46,7 +46,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 </div>
 
                 <div className="w-full aspect-[21/9] bg-muted relative rounded-3xl overflow-hidden mb-16 border border-black/5 shadow-2xl">
-                    <img src={project.featuredImageUrl || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2000&auto=format&fit=crop"} alt={project.title} className="w-full h-full object-cover" />
+                    <img src={project.featuredImageUrl || "/photo_2_2026-04-20_08-23-08.jpg"} alt={project.title} className="w-full h-full object-cover" />
                 </div>
 
                 <div className="prose prose-lg prose-a:text-accent max-w-none mb-20">
@@ -63,7 +63,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {project.galleryImagesUrls.map((url: string, i: number) => (
                                 <div key={i} className="aspect-[4/3] rounded-2xl overflow-hidden bg-muted border border-black/5 group cursor-pointer">
-                                    <img src={url || "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop"} alt={`Gallery image ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                    <img src={url || "/photo_3_2026-04-20_08-23-08.jpg"} alt={`Gallery image ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                             ))}
                         </div>
