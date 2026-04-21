@@ -152,7 +152,65 @@ export default async function Home() {
         </div>
       </section>
 
+
+      {/* Trusted By */}
+      <section className="py-20 bg-background border-t border-black/5">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center mb-12">
+            <span className="text-accent font-extrabold uppercase tracking-widest text-sm mb-4 block">Trusted By</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary tracking-tight">
+              Our Clients &amp; Partners
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-xl mx-auto text-base">
+              International agencies, government bodies, and NGOs across East Africa trust Moon Engineering to deliver.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
+            {[
+              { abbr: "TMA", name: "TradeMark Africa", logo: null },
+              { abbr: "SRS", name: "Somali Regional State RTB", logo: null },
+              { abbr: "GIZ", name: "GIZ – German Dev. Cooperation", logo: "/giz.jpg" },
+              { abbr: "JICA", name: "Japan Int'l Cooperation Agency", logo: "/japan-international-cooperation-system-118416.jpg" },
+              { abbr: "Oxfam", name: "Oxfam Ethiopia", logo: "/oxfam.avif" },
+              { abbr: "STC", name: "Save the Children", logo: "/images.png" },
+            ].map((client, idx) => (
+              <div
+                key={idx}
+                className="bg-card border border-black/5 rounded-2xl p-5 flex flex-col items-center justify-center gap-2 hover:border-accent/40 hover:shadow-lg transition-all duration-300 group cursor-default min-h-[90px]"
+              >
+                {client.logo ? (
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="w-12 h-12 object-contain mb-1"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-lg border-2 border-dashed border-muted-foreground/20 bg-muted flex items-center justify-center mb-1">
+                    <span className="text-[10px] font-extrabold text-muted-foreground/30">{client.abbr}</span>
+                  </div>
+                )}
+                <span className="text-[11px] text-muted-foreground text-center leading-tight font-medium">
+                  {client.name}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center">
+            <Link
+              href="/clients"
+              className="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all group"
+            >
+              View All Clients <ChevronRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
       {/* Dark Blue CTA Banner */}
+
       <section className="bg-primary-dark py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 opacity-50 pointer-events-none" />
 
