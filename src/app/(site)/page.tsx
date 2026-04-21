@@ -168,8 +168,8 @@ export default async function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
             {[
-              { abbr: "TMA", name: "TradeMark Africa", logo: null },
-              { abbr: "SRS", name: "Somali Regional State RTB", logo: null },
+              { abbr: "DACA", name: "Drug Admin. & Control Authority", logo: "/Drug administration and control authority of ethiopia.jpeg" },
+              { abbr: "JES", name: "Jijiga Export Slaughterhouse", logo: "/jigjiga export slaughterhouse.jpeg" },
               { abbr: "GIZ", name: "GIZ – German Dev. Cooperation", logo: "/giz.jpg" },
               { abbr: "JICA", name: "Japan Int'l Cooperation Agency", logo: "/japan-international-cooperation-system-118416.jpg" },
               { abbr: "Oxfam", name: "Oxfam Ethiopia", logo: "/oxfam.avif" },
@@ -183,7 +183,7 @@ export default async function Home() {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="w-12 h-12 object-cover rounded mb-1"
+                    className="w-12 h-12 object-contain mb-1"
                   />
                 ) : (
                   <div className="w-12 h-12 rounded-lg border-2 border-dashed border-muted-foreground/20 bg-muted flex items-center justify-center mb-1">

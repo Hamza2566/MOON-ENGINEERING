@@ -103,7 +103,7 @@ const clients = [
         abbr: "DACA",
         name: "Drug Administration and Control Authority of Ethiopia",
         type: "Government Regulatory Authority",
-        logoSrc: null,
+        logoSrc: "/Drug administration and control authority of ethiopia.jpeg",
         project: "G+4 Laboratory, Office & Storage Building – Bahirdar",
         scope: [
             "Structural design",
@@ -119,7 +119,7 @@ const clients = [
         abbr: "JES",
         name: "Jijiga Export Slaughterhouse PLC",
         type: "Private Sector – Industrial / Agro-Processing",
-        logoSrc: null,
+        logoSrc: "/jigjiga export slaughterhouse.jpeg",
         project: "25 km Factory Access Road",
         scope: [
             "Road design and alignment",
@@ -268,7 +268,7 @@ export default function ClientsPage() {
                                                 <img
                                                     src={client.logoSrc}
                                                     alt={client.name}
-                                                    className="w-full h-full object-cover"
+                                                    className="w-full h-full object-contain p-1"
                                                 />
                                             ) : (
                                                 <span className="text-xs font-extrabold text-muted-foreground/40 text-center leading-tight px-1">
