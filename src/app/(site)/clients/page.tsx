@@ -268,7 +268,7 @@ export default function ClientsPage() {
                                                 <img
                                                     src={client.logoSrc}
                                                     alt={client.name}
-                                                    className="w-full h-full object-contain p-1"
+                                                    className="w-full h-full object-cover"
                                                 />
                                             ) : (
                                                 <span className="text-xs font-extrabold text-muted-foreground/40 text-center leading-tight px-1">

@@ -183,7 +183,7 @@ export default async function Home() {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="w-12 h-12 object-contain mb-1"
+                    className="w-12 h-12 object-cover rounded mb-1"
                   />
                 ) : (
                   <div className="w-12 h-12 rounded-lg border-2 border-dashed border-muted-foreground/20 bg-muted flex items-center justify-center mb-1">
