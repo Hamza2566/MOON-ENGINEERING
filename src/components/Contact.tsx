@@ -60,8 +60,8 @@ export default function Contact() {
                                 <div>
                                     <h4 className="text-lg font-semibold text-foreground mb-1">Phone</h4>
                                     <p className="text-muted-foreground flex flex-col gap-1">
-                                        <a href="tel:+251911272815" className="hover:text-accent transition-colors">+251-911-272815</a>
-                                        <a href="tel:+251712448742" className="hover:text-accent transition-colors">+251-712-448742</a>
+                                        <a href="tel:+251911272815" className="hover:text-accent transition-colors">+251915332062</a>
+
                                     </p>
                                 </div>
                             </div>
