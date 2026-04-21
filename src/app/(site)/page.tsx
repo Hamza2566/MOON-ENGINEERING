@@ -130,7 +130,7 @@ export default async function Home() {
             {projectsPreview.map((project: any) => (
               <div key={project._id} className="bg-card rounded-[2rem] overflow-hidden border border-black/5 group flex flex-col hover:border-primary/20 transition-colors shadow-lg">
                 <div className="aspect-[4/3] w-full overflow-hidden relative">
-                  <img src={project.featuredImageUrl || "/photo_9_2026-04-20_08-23-08.jpg"} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={project.featuredImageUrl || ['/photo_9_2026-04-20_08-23-08.jpg', '/photo_7_2026-04-20_08-23-08.jpg', '/photo_5_2026-04-20_08-23-08.jpg'][allProjects.indexOf(project) % 3]} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   {/* Status Badge */}
                   <div className={`absolute top-5 left-5 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-lg shadow-md ${project.status?.toLowerCase() === 'completed' ? 'bg-green-600' : 'bg-accent'}`}>
                     {project.status}

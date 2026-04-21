@@ -8,7 +8,7 @@ const clients = [
         abbr: "TMA",
         name: "TradeMark Africa",
         type: "Regional Development Organization",
-        logoSrc: null, // replace with "/clients/tma.png" when available
+        logoSrc: "/trade mark africa.jpeg",
         project: "Togwajale Border Crossing Bridge – Construction Supervision Proposal",
         scope: [
             "Construction supervision",
@@ -24,7 +24,7 @@ const clients = [
         abbr: "SRS RTB",
         name: "Somali Regional State Road & Transport Bureau",
         type: "Government – Infrastructure & Transport Authority",
-        logoSrc: null,
+        logoSrc: "/road and transportation  .png",
         project: "Gabi'as & Ber'ano Bridge Projects",
         scope: [
             "Design review of bridge structures",
@@ -41,7 +41,7 @@ const clients = [
         abbr: "ECDSWC",
         name: "Ethiopian Construction Design & Supervision Works Corporation",
         type: "Government-Owned Engineering Consultancy",
-        logoSrc: null,
+        logoSrc: "/ethiopian construction design & supervision works corporation .jpeg",
         project: "Feasibility Study & Detailed Engineering Design",
         scope: [
             "Feasibility studies",
@@ -150,7 +150,7 @@ const clients = [
         abbr: "ORG",
         name: "Oromia Regional Government – Dugeda Dawa Woreda Office",
         type: "Regional Government",
-        logoSrc: null,
+        logoSrc: "/oromia regional.jpeg",
         project: "HIDHI BIROO – DUGEDA DAWA 194 km Road",
         scope: [
             "Construction supervision",
@@ -165,7 +165,7 @@ const clients = [
         abbr: "KAF",
         name: "KAF Engineering Consultancy",
         type: "Engineering Consultancy – Partner",
-        logoSrc: null,
+        logoSrc: "/KAF Engineering consultancy.jpeg",
         project: "Asbuli – Badiwayn Road Supervision (93 km)",
         scope: [
             "Technical supervision",

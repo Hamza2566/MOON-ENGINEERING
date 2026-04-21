@@ -75,7 +75,7 @@ export default function Footer() {
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-accent shrink-0" />
-                                <a href="mailto:mooneconsultancy@gmail.com" className="text-muted-foreground hover:text-accent transition-colors text-sm break-all">
+                                <a href="mailto:khader@moonengconsult.com" className="text-muted-foreground hover:text-accent transition-colors text-sm break-all">
                                     khader@moonengconsult.com
                                 </a>
                             </div>

@@ -64,16 +64,19 @@ export default function Team() {
             name: "Khader Mahamed Kilas",
             role: "General Manager",
             bio: "Leading the firm's strategic vision with extensive experience in civil and infrastructure engineering.",
+            image: "/Person Profile.png",
         },
         {
             name: "Mohamed Abdiwahid",
             role: "Deputy Manager",
             bio: "Assisting in strategic operations and overseeing day-to-day engineering and project executions.",
+            image: "/Person Profile.png",
         },
         {
             name: "Farhan Abdirisak",
             role: "Board Member",
             bio: "Providing executive oversight and strategic guidance to advance Moon Engineering's goals.",
+            image: "/Person Profile.png",
         },
     ];
 
@@ -90,9 +93,17 @@ export default function Team() {
                             viewport={{ once: true }}
                             className="bg-card rounded-2xl overflow-hidden border border-black/5 group hover:border-accent/30 hover:shadow-xl transition-all duration-300"
                         >
-                            {/* Illustration area */}
+                            {/* Photo / Illustration area */}
                             <div className="w-full aspect-[4/5] relative overflow-hidden">
-                                <AvatarIllustration index={index} />
+                                {member.image ? (
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    />
+                                ) : (
+                                    <AvatarIllustration index={index} />
+                                )}
                                 {/* Name overlay at bottom */}
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/50 to-transparent pt-16 px-6 pb-5 z-10">
                                     <h3 className="text-lg font-bold text-white leading-snug">{member.name}</h3>

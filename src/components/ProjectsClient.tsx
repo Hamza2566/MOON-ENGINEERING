@@ -85,7 +85,13 @@ export default function ProjectsClient({ initialProjects }: { initialProjects: P
                             >
                                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
                                     <img
-                                        src={project.featuredImageUrl || "/photo_9_2026-04-20_08-23-08.jpg"}
+                                        src={project.featuredImageUrl || [
+                                            '/photo_9_2026-04-20_08-23-08.jpg',
+                                            '/photo_7_2026-04-20_08-23-08.jpg',
+                                            '/photo_5_2026-04-20_08-23-08.jpg',
+                                            '/photo_3_2026-04-20_08-23-08.jpg',
+                                            '/photo_1_2026-04-20_08-23-08.jpg',
+                                        ][initialProjects.indexOf(project) % 5]}
                                         alt={project.title}
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
